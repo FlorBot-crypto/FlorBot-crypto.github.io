@@ -1,0 +1,62 @@
+#main-title {
+    color: yellow; 
+    text-align: center; 
+    font-family: 'Pacifico', cursive;
+    font-size:max(2vw, 7vw); 
+    margin:0 auto;
+}
+
+#main-body {
+    background-color:black
+}
+
+.seasons {
+    display:flex; 
+    justify-content:space-evenly;
+}
+
+#seasons-border {
+    text-align: center; 
+    width:40%;
+}
+
+.seasons-img {
+    border:1px solid yellow;width:100%;height:auto
+}
+
+.top-right {
+    border-top-right-radius:25px;
+}
+
+.top-left {
+    border-top-left-radius:25px;
+}
+
+.bottom-right {
+    border-bottom-right-radius:25px;
+}
+
+.bottom-left {
+    border-bottom-left-radius:25px;
+}
+
+#capt {
+    color:rgb(249, 247, 247); 
+    font-size: max(2vw, 4vw);
+}
+
+#foot{
+    font-size:3vw; 
+    color:silver;
+    text-align:center; 
+    top-padding:10px;
+}
+
+#breakline {
+    width:75%; 
+    margin-top:20px
+}
+
+#footer_img {
+    width:15%;
+}

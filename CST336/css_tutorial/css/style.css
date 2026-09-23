@@ -1,0 +1,33 @@
+#main-tittle{
+    /* color: blue; */
+    text-decoration: underline;
+    margin: auto;
+
+}
+
+#container {
+    background-color: darkblue;
+    width: 100%;
+    color: white;
+    margin: auto;
+
+}
+
+.column {
+    width: 28%;
+    background-color: aliceblue;
+    color: black;
+    border-radius: 5px;
+
+}
+
+#main-section {
+    width: 80%;
+    margin: auto;
+}
+
+#cards {
+    display: flex;
+    justify-content: space-evenly;
+}
+

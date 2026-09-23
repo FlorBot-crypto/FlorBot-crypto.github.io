@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <nav>
+        <a href="../../main.html"> [Home] </a>
+    </nav>
+    <div>
+        <h1 id="title"> Tutorial for Javascript...</h1>
+    </div>
+    <div>
+        <h2 id="sub-header">Input types...</h2>
+        <label for="userInput">Animal Noise</label>
+        <input id="userInput">
+        <p id="replaceText"> Anything you type replaces this text.</p>
+
+        <label for="ageInput">Age</label>
+        <input id="ageInput" type="number">
+    </div>
+    <div>
+        <label for="car-model-input"> </label>
+        <select id="car-model-input">
+            <option id="500-abarth">500 Abarth</option>
+            <option id="veloster-n">Veloster N</option>
+            <option id="fit">Fit</option>
+        </select>
+
+        <label for="statesInput">States</label>
+        <select>
+            <option id="Arkansas" value="CA"> California</option>
+            <option id="Arkansas" value="AR">Arkansas</option>
+        </select>
+    </div>
+    <div>
+        <!-- One input element for each checjbox, each needs an id & value,-->
+        <label>Toppings</label>
+        <input type="checkbox" id="lettuce" value="letttuce"> <label for="lettuce">lettuce</label>
+        <input type="checkbox" id="tomato" value="tomato"> <label for="tomato">Tomato</label>
+        <input type="checkbox" id="anchovy" value="anchovy"> <label for="anchovy"> Anchovy</label>
+    </div>
+    <div>
+        <!-- Same style as checkboxes but only allows one button to be selected at a time.  -->
+        <label>True or False</label>
+        <input type="radio" id="true" value="T" name="truth"><label for="true">True</label>
+        <input type="radio" id="false" value="F" name="truth"><label for="false">False</label>
+    </div>
+    <div>
+        <h2 id="sub-header">Arrays...</h2>
+        <div>
+            <!-- One input element for each checjbox, each needs an id & value,-->
+            <label>Toppings</label>
+            <input type="checkbox" name="topping" id="lettuce" value="letttuce"> <label for="lettuce">lettuce</label>
+            <input type="checkbox" name="topping" id="tomato" value="tomato"> <label for="tomato">Tomato</label>
+            <input type="checkbox" name="topping" id="anchovy" value="anchovy"> <label for="anchovy"> Anchovy</label>
+        </div>
+        <div>
+            <!-- Same style as checkboxes but only allows one button to be selected at a time.  -->
+            <label>True or False</label>
+            <input type="radio" id="true" value="T" name="truth"><label for="true">True</label>
+            <input type="radio" id="false" value="F" name="truth"><label for="false">False</label>
+        </div>
+    </div>
+    <div id="insert-area">
+
+    </div>
+    <select id="names-dropdown">
+
+    </select>
+
+    <script src="scripts/script.js"></script>
+    <script src="scripts/arrays.js"></script>
+
+</body>
+
+</html>
