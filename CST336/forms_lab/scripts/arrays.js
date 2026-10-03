@@ -75,13 +75,18 @@ console.log("Cats (but not yet): ");
 
 async function getCats () {
     let catResult = await fetch ("https://api.thecatapi.com/v1/images/search?limit=10");
-    console.log(catResult);
 
     //Get fetched cats API result, and convert to JSON, or javascript language.
     let catsData = await catResult.json();
     console.log(catsData);
 
+    let catResults = document.querySelector("#insert-cats");
 
+    for (let cat in catsData){
+        let catItem = document.createElement("img");
+        catItem.src = cat.url
+        catResults.appendChild(catItem);
+    }
 }
 
 getCats();
