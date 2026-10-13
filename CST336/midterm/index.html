@@ -1,18 +1,65 @@
+<!-- Author: Aaron Flores & Cole Giuffrida -->
+<!-- Date: 9/29/26 to 10/13/26 -->
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <script src="javascript/scripts.js"></script>
-    <title>Document</title>
+    <title>Video Game Search</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="javascript/scripts.js" defer></script>
 </head>
+
 <body>
-    <h1> Bideo Geams </h1>
-    <select id="genre"> </select>
-    <select id="platform"> </select>
-    <div id="insert"> </div>
-
-
-    
+    <header>
+        <nav class="navbar navbar-expand bg-body-tertiary">
+            <div class="container">
+                <a class="navbar-brand" href="index.html">API Explorer</a>
+                <div class="navbar-nav">
+                    <a class="nav-link active" href="index.html">Video Games</a>
+                    <a class="nav-link" href="mon.html">Digimon</a>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <main class="container py-4">
+        <h1>Video Game Search</h1>
+        <p id="search-and-results">Select a genre or platform to find free-to-play games.</p>
+        <form id="gameFilters" class="filter-panel mb-4">
+            <div class="mb-3">
+                <label for="genre" class="form-label">Genre</label>
+                <select id="genre" class="form-select">
+                    <option value="">Choose a genre</option>
+                    <option value="mmorpg">MMORPG</option>
+                    <option value="shooter">Shooter</option>
+                    <option value="strategy">Strategy</option>
+                    <option value="moba">MOBA</option>
+                    <option value="racing">Racing</option>
+                    <option value="sports">Sports</option>
+                </select>
+            </div>
+            <div class="mb-3">
+                <label for="platform" class="form-label">Platform</label>
+                <select id="platform" class="form-select">
+                    <option value="">Choose a platform</option>
+                    <option value="windows">PC (Windows)</option>
+                    <option value="browser">Web Browser</option>
+                </select>
+            </div>
+            <button type="reset" id="resetGames" class="btn btn-secondary">Reset Filters</button>
+        </form>
+        <p id="gameMessage">Choose at least one filter to see results.</p>
+        <section>
+            <h2 id="search-and-results">Results</h2>
+            <div id="insert" class="results-grid"></div>
+        </section>
+    </main>
+    <footer class="container py-3 border-top">
+        <p>Game data provided by<a href="https://www.freetogame.com/">FreeToGame</a>.</p>
+    </footer>
 </body>
+
 </html>

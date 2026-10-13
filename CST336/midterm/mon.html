@@ -1,0 +1,63 @@
+<!-- Author: Aaron Flores & Cole Giuffrida -->
+<!-- Date: 9/29/26 to 10/13/26 -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Digimon Search</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="javascript/scripts.js" defer></script>
+</head>
+
+<body>
+    <header>
+        <nav class="navbar navbar-expand bg-body-tertiary">
+            <div class="container">
+                <a class="navbar-brand" href="index.html">API Explorer</a>
+                <div class="navbar-nav">
+                    <a class="nav-link" href="index.html">Video Games</a>
+                    <a class="nav-link active" href="mon.html">Digimon</a>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <main class="container py-4">
+        <h1>Digimon Search</h1>
+        <p id="search-and-results">Enter a name or choose a level to find Digimon.</p>
+        <form id="monFilters" class="filter-panel mb-4">
+            <div class="mb-3">
+                <label for="monName" class="form-label">Name</label>
+                <input type="text" id="monName" class="form-control" placeholder="Example: Agumon">
+            </div>
+            <div class="mb-3">
+                <label for="level" class="form-label">Level</label>
+                <select id="level" class="form-select">
+                    <option value="">Choose a level</option>
+                </select>
+            </div>
+            <div class="form-check mb-3">
+                <input type="checkbox" id="sort" class="form-check-input">
+                <label for="sort" class="form-check-label">Alphabetical order</label>
+            </div>
+            <button type="reset" id="resetMons" class="btn btn-secondary">Reset Filters</button>
+        </form>
+        <p id="monMessage">Choose at least one filter to see results.</p>
+        <section>
+            <h2 id="search-and-results">Results</h2>
+            <div id="monPaging" class="mb-3" hidden>
+                <label for="monPage" class="form-label">Results page</label>
+                <select id="monPage" class="form-select"></select>
+            </div>
+            <div id="monInsert" class="results-grid"></div>
+        </section>
+    </main>
+    <footer class="container py-3 border-top">
+        <p>Digimon data provided by<a href="https://digimon-api.vercel.app/index.html">Digimon API</a>.</p>
+    </footer>
+</body>
+
+</html>
